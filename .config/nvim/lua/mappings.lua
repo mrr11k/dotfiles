@@ -26,10 +26,8 @@ local function tmap(shortcut, command)
 end
 
 -- general
-nmap('<leader>pv', ':Vex<cr>')
+nmap('<leader>pv', ':Vex!<cr>')
 nmap('<leader><cr>', ':so ~/.config/nvim/init.lua<cr>')
-nmap('<C-p>', ':GFiles<cr>')
-nmap('<leader>pf', ':Files<cr>')
 nmap('<leader>cn', ':cnext<cr>')
 nmap('<leader>cp', ':cprev<cr>')
 
