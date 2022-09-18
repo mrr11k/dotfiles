@@ -31,8 +31,18 @@ nmap('<leader><cr>', ':so ~/.config/nvim/init.lua<cr>')
 nmap('<leader>cn', ':cnext<cr>')
 nmap('<leader>cp', ':cprev<cr>')
 
+-- move lines up and down
+vmap('J', ':m ">+1<CR>gv=gv"')
+vmap('K', ':m "<-2<CR>gv=gv"')
+
+nmap('n', 'nzzzv')
+nmap('N', 'Nzzzv')
+nmap('<C-d>', '<C-d>zz')
+nmap('<C-u>', '<C-u>zz')
+
 -- telescope
 nmap('<leader>ff', '<cmd>Telescope find_files<cr>')
 nmap('<leader>fg', '<cmd>Telescope live_grep<cr>')
 nmap('<leader>fb', '<cmd>Telescope buffers<cr>')
 nmap('<leader>fh', '<cmd>Telescope help_tags<cr>')
+
