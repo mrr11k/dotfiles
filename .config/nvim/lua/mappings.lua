@@ -26,14 +26,20 @@ local function tmap(shortcut, command)
 end
 
 -- general
+nmap('<leader>cp', ':cprev<cr>')
 nmap('<leader>pv', ':Vex!<cr>')
 nmap('<leader><cr>', ':so ~/.config/nvim/init.lua<cr>')
 nmap('<leader>cn', ':cnext<cr>')
-nmap('<leader>cp', ':cprev<cr>')
+
+-- split switching
+nmap('<C-h>', '<C-w><C-h>')
+nmap('<C-j>', '<C-w><C-j>')
+nmap('<C-k>', '<C-w><C-k>')
+nmap('<C-l>', '<C-w><C-l>')
 
 -- move lines up and down
-vmap('J', ':m ">+1<CR>gv=gv"')
-vmap('K', ':m "<-2<CR>gv=gv"')
+vmap('J', ':m \'>+1<CR>gv=gv')
+vmap('K', ':m \'<-2<CR>gv=gv')
 
 nmap('n', 'nzzzv')
 nmap('N', 'Nzzzv')

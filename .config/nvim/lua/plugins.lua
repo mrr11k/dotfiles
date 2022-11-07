@@ -16,7 +16,7 @@ return require('packer').startup(function(use)
   }
   require('telescope').setup{
 	  defaults = {
-		  file_ignore_patterns = { "node_modules", "dist" }
+		  file_ignore_patterns = { 'node_modules', 'dist' }
 	  }
   }
 
