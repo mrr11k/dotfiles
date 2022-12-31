@@ -13,4 +13,3 @@ vim.expandtab=true
 vim.smartindent=true
 vim.opt.termguicolors=true -- enable true colors support
 vim.opt.signcolumn='yes:1'
-
