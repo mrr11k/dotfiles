@@ -8,7 +8,7 @@ alias vi="nvim"
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=`which chromium`
 
-export CLOUDSDK_PYTHON=/usr/local/opt/python@3.11/bin/python3
+export CLOUDSDK_PYTHON=/usr/local/opt/python@3.10/bin/python3
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
