@@ -9,20 +9,8 @@ local function nmap(shortcut, command)
   map('n', shortcut, command)
 end
 
-local function imap(shortcut, command)
-  map('i', shortcut, command)
-end
-
 local function vmap(shortcut, command)
   map('v', shortcut, command)
-end
-
-local function cmap(shortcut, command)
-  map('c', shortcut, command)
-end
-
-local function tmap(shortcut, command)
-  map('t', shortcut, command)
 end
 
 -- general
@@ -46,9 +34,6 @@ nmap('N', 'Nzzzv')
 nmap('<C-d>', '<C-d>zz')
 nmap('<C-u>', '<C-u>zz')
 
--- telescope
-nmap('<leader>ff', '<cmd>Telescope find_files<cr>')
-nmap('<leader>fg', '<cmd>Telescope live_grep<cr>')
-nmap('<leader>fb', '<cmd>Telescope buffers<cr>')
-nmap('<leader>fh', '<cmd>Telescope help_tags<cr>')
-
+-- Remap for dealing with word wrap
+vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
