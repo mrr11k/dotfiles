@@ -348,6 +348,7 @@ local servers = {
       telemetry = { enable = false },
     },
   },
+  theme_check = {},
 }
 
 -- Setup neovim lua configuration
