@@ -35,3 +35,6 @@ export PNPM_HOME="/Users/dennis/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 export PATH=~/.npm-global/bin:$PATH
 # NPM_CONFIG_PREFIX=~/.npm-global
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$HOME/.rvm/bin:$PATH"
