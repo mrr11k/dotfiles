@@ -22,7 +22,7 @@ require('lazy').setup({
   'gpanders/editorconfig.nvim',
 
   -- theme
-  'folke/tokyonight.nvim',
+  'Shatur/neovim-ayu',
 
   -- Git related plugins
   'tpope/vim-fugitive',
@@ -79,7 +79,7 @@ require('lazy').setup({
     opts = {
       options = {
 		icons_enabled = true,
-		theme = 'tokyonight',
+		theme = 'ayu-mirage',
 		component_separators = { left = '', right = ''},
 		section_separators = { left = '', right = ''},
 		disabled_filetypes = {
@@ -170,9 +170,12 @@ require('lazy').setup({
 -- configure plugins --
 -----------------------
 
--- Tokyonight theme
-vim.g.tokyonight_style = 'night'
-vim.cmd('colorscheme tokyonight')
+-- theme
+require('ayu').setup({
+	mirage = false, -- Set to `true` to use `mirage` variant instead of `dark` for dark background.
+	overrides = {}, -- A dictionary of group names, each associated with a dictionary of parameters (`bg`, `fg`, `sp` and `style`) and colors in hex.
+})
+vim.cmd[[colorscheme ayu-mirage]]
 
 -- Telescope
 require('telescope').setup{
@@ -339,14 +342,15 @@ local servers = {
   -- pyright = {},
   rust_analyzer = {},
   tsserver = {},
-
+  cssls = {},
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
       telemetry = { enable = false },
     },
   },
-  theme_check = {},
+--  theme_check = {},
+--  prettier = {}
 }
 
 -- Setup neovim lua configuration
