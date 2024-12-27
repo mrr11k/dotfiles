@@ -2,8 +2,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-require('plugins/plugins')
--- require('plugins/lsp-configs')
-
 require('config/options')
 require('config/keymaps')
+
+require('plugins/plugins')
+-- require('plugins/lsp-configs')

@@ -1,5 +1,3 @@
-vim.g.mapleader=' '
-
 -- general
 vim.keymap.set('n', '<leader>cp', ':cprev<cr>', { expr = true, silent = true })
 vim.keymap.set('n', '<leader>cn', ':cnext<cr>', { expr = true, silent = true })
