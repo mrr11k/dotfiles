@@ -1,2 +1,6 @@
 # auto generated packer compiled file
 **/.config/nvim/plugin/packer_compiled.lua
+
+# tmux plugin files
+tmux/.config/tmux/plugins
+tmux/.config_hidden_message
